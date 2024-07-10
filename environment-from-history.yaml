@@ -1,0 +1,6 @@
+name: sensitivity
+channels:
+  - conda-forge
+dependencies:
+  - mypy
+  - wemake-python-styleguide
