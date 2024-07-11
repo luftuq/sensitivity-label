@@ -18,3 +18,13 @@
 2. Change ```$fileToInsert```
 3. Install powershell
 4. Run the code
+
+## How to create bat file from powershell file
+
+1. Add this code at the beginning of ps1 file and rename as bat
+    ```
+    <# :
+    PowerShell.exe -NoProfile -Command "Invoke-Expression (Get-Content '%0' -Raw)" 
+    goto :EOF
+    #>
+    ```
